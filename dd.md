@@ -24,6 +24,7 @@ sixbox run samtools-depth.cwl samtools-depth.yaml
 | l          | read length threshold | -l    | 是    | 参数类型为整数，用于指定reads最短的长度。                                                               |
 | r          | region                | -r    | 否    | 参数类型为字符串，用该参数指定一些区域来生成指定区域的深度情况（chr:from-to）                                          |
 
+
 具体案例，使用从sixoclock中下载的`samtools-depth.cwl`，Yaml文件如下所示：
 
 ```text
