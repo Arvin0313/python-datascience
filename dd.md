@@ -23,10 +23,10 @@ table th:nth-of-type(2) {
 table th:nth-of-type(3) {
     width: 10%;
 }
-table th:nth-of-type(3) {
+table th:nth-of-type(4) {
     width: 10%;
 }
-table th:nth-of-type(3) {
+table th:nth-of-type(5) {
     width: 50%;
 }
 </style>
