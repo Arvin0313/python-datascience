@@ -13,6 +13,23 @@ sixbox run samtools-depth.cwl samtools-depth.yaml
 有关Yaml文件的配置，您可以利用通过点击网站右上方‘设置运行’按钮进行可视化设置，我买将自动为您生成运行所需的Yaml文件；当然您也可以自己编写运行需要的Yaml文件。
 
 下面将向您介绍`samtools-depth.cwl`中相关参数。
+<style>
+table th:first-of-type {
+    width: 15%;
+}
+table th:nth-of-type(2) {
+    width: 15%;
+}
+table th:nth-of-type(3) {
+    width: 10%;
+}
+table th:nth-of-type(3) {
+    width: 10%;
+}
+table th:nth-of-type(3) {
+    width: 50%;
+}
+</style>
 
 | CWL参数      | 可视化参数                 | 原软件参数 | 是否必选 | 参数说明                                                                                  |
 | ---------- | --------------------- | ----- | ---- | ------------------------------------------------------------------------------------- |
