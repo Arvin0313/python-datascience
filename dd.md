@@ -25,7 +25,23 @@ sixbox run samtools-depth.cwl samtools-depth.yaml
 | r          | region                | -r    | 否    | 参数类型为字符串，用该参数指定一些区域来生成指定区域的深度情况（chr:from-to）                                          |
 
 
-具体案例，使用从sixoclock中下载的`samtools-depth.cwl`，Yaml文件如下所示：
+## 可视化配置案例
+
+点击右上角设置运行按钮，进入可视化配置界面：
+
+![](https://tcs.teambition.net/storage/312c5cbce8a222c824d4b3f432ef2793bdfc?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IjYwZDVkMzRiYzM5MWMwZWY4M2E4YTdiYSIsImV4cCI6MTYzOTcxMjY0MywiaWF0IjoxNjM5NzA5MDQzLCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzMxMmM1Y2JjZThhMjIyYzgyNGQ0YjNmNDMyZWYyNzkzYmRmYyJ9.BMUSmpMjt_CSCtBsbxmjex-RTSl5hl5CVTj-0Yvpxy8&download=image.png "")
+
+双击`bam sorted file`按钮配置输入文件：
+
+![](https://tcs.teambition.net/storage/312c38fa29f026c795bbbb2e8a8bf4204f2c?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IjYwZDVkMzRiYzM5MWMwZWY4M2E4YTdiYSIsImV4cCI6MTYzOTcxMjQzMywiaWF0IjoxNjM5NzA4ODMzLCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzMxMmMzOGZhMjlmMDI2Yzc5NWJiYmIyZThhOGJmNDIwNGYyYyJ9.5dVzJLgFYulphMQVBRSrYKbW2p9xFQM_Nx_C-NR-s7Q&download=image.png "")
+
+配置完输入文件后点击`samtools depth`按钮配置其他参数：
+
+![](https://tcs.teambition.net/storage/312c02b078ed526a67ddf2c25f47826b97cf?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IjYwZDVkMzRiYzM5MWMwZWY4M2E4YTdiYSIsImV4cCI6MTYzOTcxMjg0OSwiaWF0IjoxNjM5NzA5MjQ5LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzMxMmMwMmIwNzhlZDUyNmE2N2RkZjJjMjVmNDc4MjZiOTdjZiJ9.6m9FcWsyjYyNES-_gcmPZc4CB-jtCLsq0raDbDMzcQ0&download=image.png "")
+
+配置完其他参数后，点击下载按钮即可下载samtools-depth.cwl和配置好的Yaml文件。
+
+按照上述方法得到的Yaml文件如下所示：
 
 ```text
 bed: null  # type "string" (optional)
