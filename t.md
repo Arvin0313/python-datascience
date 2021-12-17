@@ -16,12 +16,14 @@ sixbox run samtools-depth.cwl samtools-depth.yaml
 
 | CWL参数                 | 原软件参数 | 是否必选 | 参数说明                                                                                  | 配置范例 |
 | --------------------- | ----- | ---- | ------------------------------------------------------------------------------------- | ---- |
-| bam sorted file       | null  | 是    | 输入文件                                                                                  |      |
-| output all positions  | -a    | 否    | 参数类型为布尔值，默认值为false，当该选项为true时，将输出所有位置上的测序深度（即使该位置上的测序深度为0）                            |      |
-| positions or regions  | -b    | 否    | 参数类型为字符串，该选项可以在指定的bed file中计算位置或区域列表的深度。Bed文件每行至少包括 chrom ， chromStart ， chromEnd 三列。 |      |
-| BAM filenames         | -f    | 否    | 参数类型为字符串，可以用该参数给定一个含有多个bam文件路径的列表文件，其中每个bam文件路径占一行。                                   |      |
-| read length threshold | -l    | 是    | 参数类型为整数，用于指定reads最短的长度。                                                               |      |
-| region                | -r    | 否    | 参数类型为字符串，用该参数指定一些区域来生成指定区域的深度情况（chr:from-to）                                          |      |
+| bam sorted file       | null  | 是    | 输入文件                                                                                  | bam_sorted:  # type "File"
+    class: File
+    path     |
+| output all positions  | -a    | 否    | 参数类型为布尔值，默认值为false，当该选项为true时，将输出所有位置上的测序深度（即使该位置上的测序深度为0）                            |  all_pos: false    |
+| positions or regions  | -b    | 否    | 参数类型为字符串，该选项可以在指定的bed file中计算位置或区域列表的深度。Bed文件每行至少包括 chrom ， chromStart ， chromEnd 三列。 |  bed： 'NA12878.WGS.chrM.bed’    |
+| BAM filenames         | -f    | 否    | 参数类型为字符串，可以用该参数给定一个含有多个bam文件路径的列表文件，其中每个bam文件路径占一行。                                   | o_sapiens/WGS/NA12878.WGS.chrM.bowtie2.sort.bam'     |
+| read length threshold | -l    | 是    | 参数类型为整数，用于指定reads最短的长度。                                                               |l: 0      |
+| region                | -r    | 否    | 参数类型为字符串，用该参数指定一些区域来生成指定区域的深度情况（chr:from-to）                                          | 83-2673784'     |
 
 
 
