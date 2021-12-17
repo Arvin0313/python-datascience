@@ -15,9 +15,9 @@ sixbox run samtools-depth.cwl samtools-depth.yaml
 下面将向您介绍`samtools-depth.cwl`中相关参数。
 
 
-| CWL参数      | 可视化参数                 | 原软件参数&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;|是否必选&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;| 参数说明                                                                                  |
+| CWL参数      | 可视化参数                 | 原软件参数|是否必选 | 参数说明                                                                                  |
 | ---------- | --------------------- | ----- | ---- | ------------------------------------------------------------------------------------- |
-| bam_sorted | bam sorted file       | null  | 是    | 输入文件                                                                                  |
+| bam_sorted | bam sorted file       | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; <br> null  | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; <br> 是    | 输入文件                                                                                  |
 | all_pos    | output all positions  | -a    | 否    | 参数类型为布尔值，默认值为false，当该选项为true时，将输出所有位置上的测序深度（即使该位置上的测序深度为0）                            |
 | bed        | positions or regions  | -b    | 否    | 参数类型为字符串，该选项可以在指定的bed file中计算位置或区域列表的深度。Bed文件每行至少包括 chrom ， chromStart ， chromEnd 三列。 |
 | f          | BAM filenames         | -f    | 否    | 参数类型为字符串，可以用该参数给定一个含有多个bam文件路径的列表文件，其中每个bam文件路径占一行。                                   |
