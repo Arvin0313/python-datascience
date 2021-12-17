@@ -14,6 +14,23 @@ sixbox run samtools-depth.cwl samtools-depth.yaml
 
 下面将向您介绍`samtools-depth.cwl`中相关参数。
 
+<style>
+table th:nth-of-type(1) {
+    width: 50px;
+}
+table th:nth-of-type(2) {
+    width: 50px;
+}
+table th:nth-of-type(3) {
+    width: 50px;
+}
+table th:nth-of-type(4) {
+    width: 50px;
+}
+table th:nth-of-type(4) {
+    width: 150px;
+}
+</style>
 
 | CWL参数      | 可视化参数                 | 原软件参数|是否必选 | 参数说明                                                                                  |
 | ---------- | --------------------- | ----- | ---- | ------------------------------------------------------------------------------------- |
