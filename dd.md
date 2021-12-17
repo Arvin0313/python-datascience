@@ -15,7 +15,7 @@ sixbox run samtools-depth.cwl samtools-depth.yaml
 下面将向您介绍`samtools-depth.cwl`中相关参数。
 
 
-| CWL参数      | 可视化参数 | &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;原软件参数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;是否必选&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 参数说明                                                       |
+| CWL参数      | 可视化参数 | &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;原软件参数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; | &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;是否必选&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; | 参数说明                                                       |
 | ---------- | --------------------- | ----- | ---- | ------------------------------------------------------------------------------------- |
 | bam_sorted | bam sorted file       |  null  | 是    | 输入文件                                                                                  |
 | all_pos    | output all positions  | -a    | 否    | 参数类型为布尔值，默认值为false，当该选项为true时，将输出所有位置上的测序深度（即使该位置上的测序深度为0）                            |
